@@ -27,6 +27,7 @@ from tasks.common import TaskMixture
 from tasks.arc import ARC
 from tasks.gsm8k import GSM8K
 from tasks.smoltalk import SmolTalk
+from tasks.jsmoltalk import JSmolTalk
 from tasks.customjson import CustomJSON
 from tasks.spellingbee import SimpleSpelling, SpellingBee
 
@@ -86,6 +87,7 @@ train_ds = TaskMixture([
     ARC(subset="ARC-Challenge", split="train"), # 1.1K rows
     GSM8K(subset="main", split="train"), # 8K rows
     SmolTalk(split="train", stop=10_000), # 10K rows of smoltalk
+    JSmolTalk(split="train", stop=5_000), # 20K rows of smoltalk
     CustomJSON(filepath=identity_conversations_filepath), # 1K rows of synthetic identity conversations
     SimpleSpelling(size=300, split="train"), # 300 rows of Simple Spelling (e.g. spell the word 'apple')
     SpellingBee(size=300, split="train"), # 300 rows of Spelling Bee (e.g. how many 'r' are in 'strawberry'?)

@@ -98,7 +98,7 @@ base_dir = get_base_dir()
 identity_conversations_filepath = os.path.join(base_dir, "identity_conversations.jsonl")
 train_dataset = TaskMixture([
     SmolTalk(split="train"), # 460K rows of general conversations
-    JSmolTalk(split="train"), # 460K rows of general conversations
+    JSmolTalk(split="train"), # 132K rows of general conversations
     MMLU(subset="auxiliary_train", split="train"), # 100K rows of multiple choice problems drawn from ARC, MC_TEST, OBQA, RACE
     GSM8K(subset="main", split="train"), # 8K rows teaching simple math and (calculator) tool use
     CustomJSON(filepath=identity_conversations_filepath), # 1000 rows of synthetic identity conversations
@@ -108,7 +108,6 @@ train_dataset = TaskMixture([
 ]) # total: 460K + 100K + 8K + 200K + 80K = 848K rows
 val_dataset = TaskMixture([
     SmolTalk(split="test"), # 24K rows in test set
-    JSmolTalk(split="test"), # 24K rows in test set
     MMLU(subset="all", split="test", stop=5200), # 14K rows in test set, use only 5.2K to match the train ratios
     GSM8K(subset="main", split="test", stop=420), # 1.32K rows in test set, use only 420 to match the train ratios
 ]) # total: 24K + 14K + 1.32K ~= 39K rows
