@@ -44,7 +44,7 @@ class CustomJSON(Task):
                     assert message["role"] == expected_role, f"Message {i} has role {message['role']} but should be {expected_role}"
                     assert isinstance(message["content"], str), f"Message {i} content must be a string"
 
-                self.conversations.append(messages)
+                self.conversations.append(messages[0])
 
         self.length = len(self.conversations)
 
