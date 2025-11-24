@@ -1,3 +1,6 @@
+
+![Nanochat_saint_iberis](https://github.com/user-attachments/assets/b08378f7-0777-4ff1-9e75-b08b71a6a7d0)
+
 # 🌸 Liquid-Time-nanochat ver Japanese & English
 
 このリポジトリは、**nanochat** をより高速に学習・推論するために、**Liquid Time-Constant Networks (LTCs)** および **Liquid Foundation Models (LFM2)** から着想を得た **SLC2** というモジュールを使用しています。
