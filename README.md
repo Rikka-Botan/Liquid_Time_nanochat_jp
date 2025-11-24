@@ -110,6 +110,8 @@ speedrun モデルは 4e19 FLOPs の能力なので、幼稚園児と話して�
 
 # 🌸　データセット
 
+Chinchilla則に基づき学習データ量は決定しています。
+
 事前学習用：
 https://huggingface.co/datasets/RikkaBotan/FineDataset_13B_JpEn
 
