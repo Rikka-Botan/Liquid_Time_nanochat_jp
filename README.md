@@ -11,7 +11,7 @@
 
 <img width="4400" height="1595" alt="Saint_Iberis" src="https://github.com/user-attachments/assets/9edba3df-0bc6-43b0-aedd-f57ad1929ee3" />
 
-| Property              | Saint Iberis d12              | Remarks                                               |
+| Property              | Saint Iberis d16              | Remarks                                               |
 | --------------------- | ----------------------------- |------------------------------------------------------ |
 | **Total parameters**  | 376,240,128 (376M)            | n_layer: 16, n_head: 16, n_kv_head: 16, n_embd: 1024  |
 | **Layers**            | 16 (9 slc2 + 7 attn)          | attn layers: 1, 4, 7, 10, 11, 14, 15                  |
